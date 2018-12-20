@@ -1,25 +1,42 @@
 import React, { Component } from 'react';
 import {Route, BrowserRouter, Switch} from 'react-router-dom'
 import HeaderBar from './components/HeaderBar'
+import FooterBar from './components/FooterBar'
 import Home from './components/Home'
+import About from './components/About'
+import PracticeAreas from './components/Practice-Areas';
 
 class App extends Component {
   render() {
     return (
-      <div style={{width:"100%"}}>
-        <div>
-          <HeaderBar/>
+      <div style={{width:"100%",maxHeight:"100%",position:'realtive'}}>
+        <div style={{paddingBottom:50,minHeight:'100%'}}>
+          <BrowserRouter>
+            <React.Fragment>
+              <div>
+                <HeaderBar/>
+              </div>
+              <Switch>
+                <Route exact path="/" render={(props) => 
+                  <Home/>
+                }>
+                </Route>
+                <Route exact path="/about" render={(props) => 
+                  <About/>
+                }>
+                </Route>
+                <Route exact path="/practice-areas" render={(props) => 
+                  <PracticeAreas/>
+                }>
+                </Route>
+              </Switch>
+            </React.Fragment>   
+          </BrowserRouter>
+        </div>      
+        <div style={{bottom:0,left:0,position:'absolute',width:'100%'}}>
+          <FooterBar/>
         </div>
-        <BrowserRouter>
-          <Switch>
-            <Route exact path="/" render={(props) => 
-              <Home/>
-            }>
-            </Route>
-          </Switch>
-        </BrowserRouter>
       </div>
-      
     );
   }
 }
