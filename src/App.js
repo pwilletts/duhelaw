@@ -33,9 +33,9 @@ class App extends Component {
             </React.Fragment>   
           </BrowserRouter>
         </div>      
-        <div style={{bottom:0,left:0,position:'absolute',width:'100%'}}>
+        {/* <div style={{bottom:0,left:0,position:'absolute',width:'100%'}}>
           <FooterBar/>
-        </div>
+        </div> */}
       </div>
     );
   }
