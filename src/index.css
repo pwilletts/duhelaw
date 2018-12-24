@@ -47,3 +47,12 @@ body {
   padding: 0 !important;
   margin: 0 !important;
 }
+
+.dropdown-menu{
+  width:800px;
+  /* height: 150px; */
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  }
