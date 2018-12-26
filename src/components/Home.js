@@ -123,6 +123,49 @@ class Home extends React.Component {
                         </div>
                     </div>
                 </div>
+                <div className="col-6 mr-auto ml-auto">
+                    <div className="col-12 text-center">
+                        <h4>Contact Now! Free Consultations!</h4>
+                    </div>
+                    <form>
+                      <div class="form-row">
+                        <div class="form-group col-md-4">
+                          <label for="inputEmail4">Name</label>
+                          <input type="text" class="form-control" id="inputEmail4" placeholder="Jordan Duhe"></input>
+                        </div>
+                        <div class="form-group col-md-4">
+                          <label for="inputPassword4">Contact #</label>
+                          <input type="text" class="form-control" id="inputPassword4" placeholder="910-763-4323"></input>
+                        </div>
+                        <div class="form-group col-md-4">
+                          <label for="inputPassword4">Email</label>
+                          <input type="text" class="form-control" id="inputPassword4" placeholder="duhelaw@gmail.com"></input>
+                        </div>
+                      </div>
+                      <div class="form-row">
+                        <div className="form-group col-md-12">
+                            <label for="textarea">Description</label>
+                            <textarea className="form-control" id="textarea" rows='6'></textarea>
+                        </div>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Send</button>
+                    </form>
+                </div>
+                <div className="col-8 mr-auto ml-auto row mb-4">
+                    <div className="col-12 text-center">
+                        <h4>Proudly serving with locations in Brunswick and New Hanover Counties</h4>
+                    </div>                   
+                    <div className="col-6 text-center">
+                        <h5>New Hanover County</h5>
+                        <a href="https://goo.gl/maps/s9ssgHZejbB2" target="_blank">Click here to route!</a>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3298.319180913806!2d-77.94793438431593!3d34.240398280555226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89aa1fc17b06473b%3A0xb7a212e30e6a745f!2sDuhe+Willetts+Law%2C+PLLC!5e0!3m2!1sen!2sus!4v1545778717360" width="600" height="450" frameborder="0" style={{border:0}} allowfullscreen></iframe>
+                    </div>
+                    <div className="col-6 text-center">
+                        <h5>Brunswick County</h5>
+                        <a href="https://goo.gl/maps/1nTdbW8YXsv" target="_blank">Click here to route!</a>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d206.5633578152257!2d-78.14681079468065!3d34.06916241898909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89aa0fa8f4096a39%3A0xb3b87be82faa404d!2sBolivia+Office+Suites!5e0!3m2!1sen!2sus!4v1545779712042" width="600" height="450" frameborder="0" style={{border:0}} allowfullscreen></iframe>
+                    </div>
+                </div>
             </div>
       );
     }

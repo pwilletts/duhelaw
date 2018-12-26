@@ -30,12 +30,13 @@ class App extends Component {
                 }>
                 </Route>
               </Switch>
+              <div>
+                <FooterBar/>
+              </div>
             </React.Fragment>   
           </BrowserRouter>
         </div>      
-        {/* <div style={{bottom:0,left:0,position:'absolute',width:'100%'}}>
-          <FooterBar/>
-        </div> */}
+        
       </div>
     );
   }
