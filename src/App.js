@@ -4,6 +4,8 @@ import HeaderBar from './components/HeaderBar'
 import FooterBar from './components/FooterBar'
 import Home from './components/Home'
 import About from './components/About'
+import Contact from './components/Contact'
+import CurrentClient from './components/CurrentClient'
 import PracticeAreas from './components/Practice-Areas';
 
 class App extends Component {
@@ -23,6 +25,14 @@ class App extends Component {
                 </Route>
                 <Route exact path="/about" render={(props) => 
                   <About/>
+                }>
+                </Route>
+                <Route path="/contact" render={(props) => 
+                  <Contact/>
+                }>
+                </Route>
+                <Route path="/current-clients" render={(props) => 
+                  <CurrentClient/>
                 }>
                 </Route>
                 <Route exact path="/practice-areas" render={(props) => 
