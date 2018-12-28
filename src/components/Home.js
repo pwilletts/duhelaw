@@ -6,23 +6,22 @@ class Home extends React.Component {
       return (
             <div className="col-12 row nopadding">
                 <div className="col-12 header-img nopadding mb-4">
-                    <div className="col-8 text-center mr-auto ml-auto">
+                    <div className="col-xl-10 col-lg-12 col-12 text-center mr-auto ml-auto">
                         <div class="jumbotron">
                             <h1 class="display-4 mt-3" style={{fontWeight:'bold'}}>Committed to Defending Your Rights</h1>
-                            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+                            <p class="lead">The criminal law specialists at Duhe Willetts Law PLLC will guide you through every step of your legal circumstance and continously advocate for your rights.</p>
                             <hr class="my-4"></hr>
-                            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
                             <a class="btn btn-primary btn-lg" href="#" role="button">Contact Us</a>
                         </div>
                     </div>
                 </div>         
                 <div class="card-body col-12" style={{backgroundColor:'#c0c0c0'}}>
-                    <div className="col-8 mr-auto ml-auto text-center" style={{color:"white"}}>
+                    <div className="col-xl-10 mr-auto ml-auto text-center" style={{color:"white"}}>
                         <h2>We provide representation in the following criminal law areas:</h2>
                     </div>                   
-                    <div class="card-body col-5 mr-auto ml-auto">
+                    <div class="card-body col-xl-8 col-lg-8 col-md-10 col-sm-12 col-12 mr-auto ml-auto">
                         <div class="card-deck">
-                            <Link className="col-8" to={`/invoices`} style={{textDecoration: 'none',color:'black'}} className="card hvr-fade pointer mb-2">
+                            <Link to={`/invoices`} style={{textDecoration: 'none',color:'black'}} className="card hvr-fade pointer mb-2">
                                 <div class="card-body text-center">
                                     <h5 class="card-title">Federal Crimes</h5>
                                     {/* <p class="card-text">View invoice status, payment date, or update invoice information.</p> */}
@@ -85,7 +84,7 @@ class Home extends React.Component {
                     </div>
                 </div>
                 <div className="col-12">
-                    <div className="col-8 mr-auto ml-auto text-center">
+                    <div className="col-xl-9 col-lg-10 col-md-10 col-12 mr-auto ml-auto text-center">
                         <h3>
                             Proudly serving Brunswick, New Hanover, and Pender Counties.
                         </h3>
@@ -97,13 +96,13 @@ class Home extends React.Component {
                 </div>
                 <div className="col-12 mr-auto ml-auto mt-4">
                     <h3 style={{textAlign:'center'}}>Five Star Representation</h3>
-                    <div className="col-10 mr-auto ml-auto" style={{height:200,border:'2px solid red',backgroundColor:'grey'}}>
+                    <div className="col-xl-10 col-lg-10 col-md-11 col-12 mr-auto ml-auto" style={{height:200,border:'2px solid red',backgroundColor:'grey'}}>
                         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span class="sr-only">Previous</span>
                             </a>
-                            <div className="col-8 mr-auto ml-auto">
+                            <div className="col-lg-10 col-12 mr-auto ml-auto">
                                 <div class="carousel-inner text-center" style={{height:200}}>
                                     <div class="carousel-item active">
                                         <h5>Jordan Duhe has been an excellent, over the top attorney. She's decicated to her job and her clients. I felt I was in good hands the moment I sat down and started explaining my situation. She's straightforward and honest. That's the beauty behind her and her work. No BS. I would recommend her to anyone who's dealing with the courts and needs legal help and advice.</h5>
@@ -123,7 +122,7 @@ class Home extends React.Component {
                         </div>
                     </div>
                 </div>
-                <div className="col-6 mr-auto ml-auto">
+                <div className="col-lg-8 col-md-10 col-12 mr-auto ml-auto">
                     <div className="col-12 text-center">
                         <h4>Contact Now! Free Consultations!</h4>
                     </div>
@@ -151,7 +150,7 @@ class Home extends React.Component {
                       <button type="submit" class="btn btn-primary">Send</button>
                     </form>
                 </div>
-                <div className="col-8 mr-auto ml-auto row mb-4">
+                <div className="col-12 col-md-12 col-lg-10 col-xl-10 mr-auto ml-auto row mb-4">
                     <div className="col-12 text-center">
                         <h4>Proudly serving with locations in Brunswick and New Hanover Counties</h4>
                     </div>                   

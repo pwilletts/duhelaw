@@ -12,7 +12,7 @@ class Home extends React.Component {
                 </button>
             </div>
 
-            <div className="navbar-nav ml-8">
+            <div className="navbar-nav ml-8 collapse navbar-collapse" id="navbarSupportedContent">
                 <Link to="/">
                     <li class="nav-item">
                         <a class="nav-link" href="#">Home</a>
@@ -62,13 +62,14 @@ class Home extends React.Component {
                         </div>
                     </div>
                 </li>
-            </div>
-            <div className="ml-auto">
+                <div className="ml-auto">
                 <form class="form-inline my-2 my-lg-0">
                      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"></input>
                      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                  </form>
             </div>
+            </div>
+            
         </nav>
       );
     }

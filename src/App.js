@@ -35,8 +35,8 @@ class App extends Component {
                   <CurrentClient/>
                 }>
                 </Route>
-                <Route exact path="/practice-areas" render={(props) => 
-                  <PracticeAreas/>
+                <Route exact path="/practice-areas/:area?/:crime?" render={(props) => 
+                  <PracticeAreas {...props}/>
                 }>
                 </Route>
               </Switch>
