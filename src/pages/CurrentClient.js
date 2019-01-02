@@ -1,4 +1,5 @@
 import React from 'react'
+import ContactForm from '../components/ContactForm'
 
 class About extends React.Component {
     render() {
@@ -43,31 +44,8 @@ class About extends React.Component {
                     <h4><a href="mailto:duhelaw@gmail.com">duhelaw@gmail.com</a></h4>
                 </div>
                 <div className="col-10 mr-auto ml-auto text-center">
-                        <h4>Or Send Us A Message</h4>
-                        <form>
-                            <div class="form-row">
-                            <div class="form-group col-md-4">
-                                <label for="inputEmail4">Name</label>
-                                <input type="text" class="form-control" id="inputEmail4" placeholder="Jordan Duhe"></input>
-                            </div>
-                            <div class="form-group col-md-4">
-                                <label for="inputPassword4">Contact #</label>
-                                <input type="text" class="form-control" id="inputPassword4" placeholder="910-763-4323"></input>
-                            </div>
-                            <div class="form-group col-md-4">
-                                <label for="inputPassword4">Email</label>
-                                <input type="text" class="form-control" id="inputPassword4" placeholder="duhelaw@gmail.com"></input>
-                            </div>
-                            </div>
-                            <div class="form-row">
-                            <div className="form-group col-md-12">
-                                <label for="textarea">Description</label>
-                                <textarea className="form-control" id="textarea" rows='4'></textarea>
-                            </div>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Send</button>
-                        </form>
-                    </div>
+                    <ContactForm/>
+                </div>
             </div>
           </div>
       );

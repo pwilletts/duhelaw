@@ -1,7 +1,51 @@
 import React from 'react'
+import $ from 'jquery'
 import {Link} from 'react-router-dom'
+import PracticeAreasDropdown from '../components/PracticeAreasDropdown'
+const crimeData = require('../data/config.json')
 
-class Home extends React.Component {
+class HeaderBar extends React.Component {
+    state = {
+        searchTerm: null,
+        searchResults: null
+    }
+
+    handleSearch(){
+        var a = []
+        var categories = crimeData.filter(a => a.type.indexOf($('#searchTerm').val()) > -1)
+        var i = 0;
+        var d = 0;
+        var x = 0;
+
+
+        for(i=0;i <= crimeData.length-1;i++){
+            if(crimeData[i].type.indexOf($('#searchTerm').val()) > -1){
+                categories.push(crimeData[i])
+                break
+            }
+            for(d=0; d<=crimeData[i].crimes.length-1;d++){
+                if(crimeData[i].crimes[d].type.indexOf($('#searchTerm').val()) > -1){
+                    categories.push(crimeData[i])
+                    break;
+                } else {
+                    for(x=0;x<=crimeData[i].crimes[d].description.length-1;x++){
+                        if(crimeData[i].crimes[d].description[x].indexOf($('#searchTerm').val()) > -1){
+                            categories.push(crimeData[i])
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+        this.setState({searchResults: categories})
+    }
+
+    updateState(target, value){
+        this.setState({[target]: value}, () => {
+            console.log(this.state[target])
+        })
+    }
+
     render() {
       return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark navbar-fixed-bottom">
@@ -19,17 +63,12 @@ class Home extends React.Component {
                     </li>
                 </Link>
 
-                <Link to="/about">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                </Link>
-                
-                <Link to="/contact">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                </Link>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        Practice Areas
+                    </a>
+                    <PracticeAreasDropdown/>
+                </li>
 
                 <Link to="/current-clients">
                     <li class="nav-item">
@@ -37,42 +76,34 @@ class Home extends React.Component {
                     </li>
                 </Link>
 
-                <li class="nav-item dropdown">
-                    <a class="nav-link" href="" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                        Practice Areas
-                    </a>
-                    <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <h4>Practice Areas</h4>
-                        <div class="row nopadding">
-                            <ul class="col-md-4 text-center mt-2 mb-2">
-                                <a className="dropdown-item text-center mt-4 mb-4" href="/practice-areas/federal-crimes">Federal Crimes</a>
-                                <a className="dropdown-item text-center mt-4 mb-4" href="/practice-areas/drug-crimes">Drug Crimes</a>
-                                <a className="dropdown-item text-center mt-4 mb-4" href="/practice-areas/sex-crimes">Sex Crimes</a>
-                            </ul>
-                            <ul class="col-md-4 text-center mt-2 mb-2">
-                                <a className="dropdown-item text-center mt-4 mb-4" href="/practice-areas/violent-felonies">Violent Felonies</a>
-                                <a className="dropdown-item text-center mt-4 mb-4" href="/practice-areas/misdemeanors">Misdemeanors</a>
-                                <a className="dropdown-item text-center mt-4 mb-4" href="/practice-areas/dwi">DWI Charges</a>
-                            </ul>
-                            <ul class="col-md-4 text-center mt-2 mb-2">
-                                <a className="dropdown-item text-center mt-4 mb-4" href="/practice-areas/traffic-violations">Traffice Violations</a>
-                                <a className="dropdown-item text-center mt-4 mb-4" href="/practice-areas/domestic-violence">Domestic Violence</a>
-                                <a className="dropdown-item text-center mt-4 mb-4" href="/practice-areas/underage-drinking">Underage Drinking</a>
-                            </ul>
-                        </div>
-                    </div>
-                </li>
-                <div className="ml-auto">
-                <form class="form-inline my-2 my-lg-0">
-                     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"></input>
-                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                 </form>
+                <Link to="/contact">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </Link>
+
+                <Link to="/about">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                </Link>
+                
+                <Link to="/reviews">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Reviews</a>
+                    </li>
+                </Link>
+
+                <div className="ml-auto">                 
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" id='searchTerm' onChange={(e) => this.updateState('searchTerm', e.target.value)} placeholder="Search" aria-label="Search"></input>
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="button">Search</button>
+                    </form>
+                </div>
             </div>
-            </div>
-            
         </nav>
       );
     }
   }
   
-  export default Home;
+  export default HeaderBar;

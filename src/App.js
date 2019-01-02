@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import {Route, BrowserRouter, Switch} from 'react-router-dom'
 import HeaderBar from './components/HeaderBar'
 import FooterBar from './components/FooterBar'
-import Home from './components/Home'
-import About from './components/About'
-import Contact from './components/Contact'
-import CurrentClient from './components/CurrentClient'
-import PracticeAreas from './components/Practice-Areas';
+import Home from './pages/Home'
+import About from './pages/About'
+import Contact from './pages/Contact'
+import CurrentClient from './pages/CurrentClient'
+import PracticeAreas from './pages/Practice-Areas';
 
 class App extends Component {
   render() {
@@ -16,7 +16,7 @@ class App extends Component {
           <BrowserRouter>
             <React.Fragment>
               <div>
-                <HeaderBar/>
+                <HeaderBar props={this.props}/>
               </div>
               <Switch>
                 <Route exact path="/" render={(props) => 

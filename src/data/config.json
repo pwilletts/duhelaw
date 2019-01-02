@@ -1,0 +1,39 @@
+[
+    {
+        "type": "violent felonies",
+        "crimes": [
+            {
+                "type": "assault",
+                "description": ["assualt", "inflicting", "serious", "injury"]
+            },
+            {
+                "type": "robbery",
+                "description": ["robbery", "with", "a", "dangerous", "weapon"]
+            }
+        ]
+    }, {
+        "type": "drug possession",
+        "crimes": [
+            {
+                "type": "assault",
+                "description": ["assualt", "inflicting", "serious", "injury"]
+            },
+            {
+                "type": "robbery",
+                "description": ["robbery", "with", "a", "dangerous", "weapon"]
+            }
+        ]
+    },{
+        "type": "sex offenses",
+        "crimes": [
+            {
+                "type": "rape",
+                "description": ["assualt", "inflicting", "serious", "injury"]
+            },
+            {
+                "type": "sexual-assault",
+                "description": ["robbery", "with", "a", "dangerous", "weapon"]
+            }
+        ]
+    }
+]
