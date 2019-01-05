@@ -7,6 +7,7 @@ import About from './pages/About'
 import Contact from './pages/Contact'
 import CurrentClient from './pages/CurrentClient'
 import PracticeAreas from './pages/Practice-Areas';
+import Reviews from './pages/Reviews'
 
 class App extends Component {
   render() {
@@ -37,6 +38,10 @@ class App extends Component {
                 </Route>
                 <Route exact path="/practice-areas/:area?/:crime?" render={(props) => 
                   <PracticeAreas {...props}/>
+                }>
+                </Route>
+                <Route exact path="/reviews" render={(props) => 
+                  <Reviews {...props}/>
                 }>
                 </Route>
               </Switch>

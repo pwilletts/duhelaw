@@ -31,7 +31,7 @@ class PracticeAreasDropdown extends React.Component {
 
     render() {
       return (
-        <div className="dropdown-menu text-center" aria-labelledby="navbarDropdown">
+        <div className="here dropdown-menu text-center" aria-labelledby="navbarDropdown">
             <h4>Practice Areas</h4>
             <div>
                 <ul class="col-12 text-center">

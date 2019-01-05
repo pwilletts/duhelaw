@@ -10,13 +10,16 @@ class HeaderBar extends React.Component {
         searchResults: null
     }
 
+    componentDidMount(){
+
+    }
+
     handleSearch(){
         var a = []
         var categories = crimeData.filter(a => a.type.indexOf($('#searchTerm').val()) > -1)
         var i = 0;
         var d = 0;
         var x = 0;
-
 
         for(i=0;i <= crimeData.length-1;i++){
             if(crimeData[i].type.indexOf($('#searchTerm').val()) > -1){
@@ -42,7 +45,7 @@ class HeaderBar extends React.Component {
 
     updateState(target, value){
         this.setState({[target]: value}, () => {
-            console.log(this.state[target])
+            this.handleSearch()
         })
     }
 
@@ -63,10 +66,12 @@ class HeaderBar extends React.Component {
                     </li>
                 </Link>
 
-                <li class="nav-item dropdown">
-                    <a class="nav-link" href="" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                        Practice Areas
-                    </a>
+                <li class="here nav-item dropdown">
+                    <Link to="/practice-areas">
+                        <a class="nav-link" href="" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            Practice Areas
+                        </a>
+                    </Link>                  
                     <PracticeAreasDropdown/>
                 </li>
 
@@ -94,11 +99,29 @@ class HeaderBar extends React.Component {
                     </li>
                 </Link>
 
-                <div className="ml-auto">                 
-                    <form class="form-inline my-2 my-lg-0">
+                <div className="ml-auto">   
+                    <form class="dropdown form-inline my-2 my-lg-0">
                         <input class="form-control mr-sm-2" type="search" id='searchTerm' onChange={(e) => this.updateState('searchTerm', e.target.value)} placeholder="Search" aria-label="Search"></input>
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="button">Search</button>
-                    </form>
+                        <button id="dLabel" className="btn btn-outline-success" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Search
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dLabel">
+                            {this.state.searchResults ? this.state.searchResults.map(
+                                result => {
+                                    // result.crimes.map(
+                                    //     crime => {
+                                    //         return (
+                                    //             <li>{crime}</li>
+                                    //         )
+                                    //     }
+                                    // )
+                                    return(
+                                        <li>{result.type}</li>
+                                    )
+                                }
+                            ): ""}
+                        </div>
+                    </form>                                     
                 </div>
             </div>
         </nav>
