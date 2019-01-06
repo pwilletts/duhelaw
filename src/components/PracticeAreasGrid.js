@@ -8,7 +8,7 @@ class Home extends React.Component {
               <div className="col-xl-10 mr-auto ml-auto text-center" style={{color:"white"}}>
                     <h2>We provide representation in the following criminal law areas:</h2>
                 </div>                   
-                <div class="card-body col-xl-8 col-lg-8 col-md-10 col-sm-12 col-12 mr-auto ml-auto">
+                <section class="card-body col-xl-8 col-lg-8 col-md-10 col-sm-12 col-12 mr-auto ml-auto">
                     <div class="card-deck">
                         <Link to={`/invoices`} style={{textDecoration: 'none',color:'black'}} className="card hvr-fade pointer mb-2">
                             <div class="card-body text-center">
@@ -70,7 +70,7 @@ class Home extends React.Component {
                             </div>
                         </Link>
                     </div>
-                </div>
+                </section>
           </React.Fragment>
       );
     }

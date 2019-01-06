@@ -14,21 +14,21 @@ class Home extends React.Component {
                 <div className="col-12 header-img nopadding mb-4">
                     <Header/>
                 </div>         
-                <div class="card-body col-12" style={{backgroundColor:'#c0c0c0'}}>
+                <section class="col-12" style={{backgroundColor:'#f3efe0'}}>
                     <PracticeAreasGrid/>
-                </div>
-                <div className="col-12">
+                </section>
+                <section className="col-12">
                     <ShortAbout/>
-                </div>
-                <div className="col-12 mr-auto ml-auto mt-4">
+                </section>
+                <section className="col-12 mr-auto ml-auto mt-4" style={{backgroundColor:'#f3efe0'}}>
                     <ReviewsWidget/>
-                </div>
-                <div className="col-lg-8 col-md-10 col-12 mr-auto ml-auto">
+                </section>
+                <section className="col-lg-8 col-md-10 col-12 mr-auto ml-auto">
                     <ContactForm/>
-                </div>
-                <div className="col-12 col-md-12 col-lg-10 col-xl-10 mr-auto ml-auto row mb-4">
+                </section>
+                <section className="col-12 col-md-12 col-lg-10 col-xl-10 mr-auto ml-auto row mb-4">
                     <Locations/>
-                </div>
+                </section>
             </div>
       );
     }

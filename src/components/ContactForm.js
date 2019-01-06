@@ -6,7 +6,7 @@ class ContactForm extends React.Component {
       return (
         <React.Fragment>
             <div className="col-12 text-center">
-                <h4>Contact Now! Free Consultations!</h4>
+                <h2>Contact Now! Free Consultations!</h2>
             </div>
             <form>
                 <div class="form-row">

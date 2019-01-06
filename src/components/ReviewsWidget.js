@@ -5,8 +5,8 @@ class ReviewsWidget extends React.Component {
     render() {
       return (
           <React.Fragment>
-                <h3 style={{textAlign:'center'}}>Five Star Representation</h3>
-                <div className="col-xl-10 col-lg-10 col-md-11 col-12 mr-auto ml-auto" style={{height:200,border:'2px solid red',backgroundColor:'grey'}}>
+                <h2 style={{textAlign:'center'}}>Five Star Representation</h2>
+                <div className="col-xl-10 col-lg-10 col-md-11 col-12 mr-auto ml-auto" style={{height:200,}}>
                     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
