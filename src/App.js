@@ -9,6 +9,12 @@ import CurrentClients from './pages/CurrentClients'
 import PracticeAreas from './pages/Practice-Areas';
 import Reviews from './pages/Reviews'
 
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faStar } from '@fortawesome/free-solid-svg-icons'
+library.add(faStar)
+
+
+
 class App extends Component {
   render() {
     return (
