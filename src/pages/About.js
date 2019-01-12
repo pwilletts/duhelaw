@@ -2,35 +2,62 @@ import React from 'react'
 import headshot from '../pictures/headshot.jpg'
 import ContactForm from '../components/ContactForm'
 import Locations from '../components/Locations'
+import Contact from './Contact';
 
 class About extends React.Component {
     render() {
       return (
-          <div className="col-9 mr-auto ml-auto mt-4">
-            <div className="col-12">
-                <h2>Meet Our Firm</h2>
-            </div>
-            <div className="col-12 row">
-                <div className="col-4">
-                    <img style={{maxWidth:'100%',maxHeight:400,borderRadius:'5%'}} src={headshot}></img>
+        <div className="col-12 row nopadding mb-4">
+            <div className="col-12" style={{paddingBottom:50}}>
+                <div className="col-10 mr-auto ml-auto mt-4">
+                    <div className="col-12 row" style={{paddingTop:80}}>
+                        <div className="col-3">
+                            <img style={{maxWidth:'100%',maxHeight:600}} src={headshot}></img>
+                        </div>
+                        <div className="col-9">
+                            <h3 className="text-center"><u><b>About Duhe Willetts Law PLLC...</b></u></h3>
+                            <h4>is the product of Jordan Duhe Willetts desire to build a law firm focused on prvoding clients the highest quality legal services focused on each client's individual needs.  As one of only nine Criminal Law Specialist's in Southeastern North Carolina, Duhe Willetts Law has the experience and legal expertise to guide you through and out of your legal circumstance.</h4>
+                            <h3 className="mt-4 text-center"><u><b>Meet Jordan Duhe Willetts</b></u></h3>
+                            <h4>
+                                Originally from Maryland, Jordan fell in love with North Carolina while obtaining her undergraduate degree at Guilford College, in Greensboro, North Carolina.  She is a graduate of Washington and Lee University School of Law.  When not at the office, Jordan likes to enjoy Southeastern North Carolina's beautiful beaches, and spending time with her husband, Patrick, and her dog, Pippin.
+                            </h4>
+                        </div>
+                    </div>    
                 </div>
-                <div className="col-8 text-center">
-                    <h3><u><b>About Duhe Willetts Law PLLC...</b></u></h3>
-                    <h4>is the product of Jordan Duhe Willetts desire to build a law firm focused on prvoding clients the highest quality legal services focused on each client's individual needs.  As one of only nine Criminal Law Specialist's in Southeastern North Carolina, Duhe Willetts Law has the experience and legal expertise to guide you through and out of your legal circumstance.</h4>
-                    <h3 className="mt-4"><u><b>Meet Jordan Duhe Willetts</b></u></h3>
-                    <h4>
-                        Originally from Maryland, Jordan fell in love with North Carolina while obtaining her undergraduate degree at Guilford College, in Greensboro, North Carolina.  She is a graduate of Washington and Lee University School of Law.  When not at the office, Jordan likes to enjoy Southeastern North Carolina's beautiful beaches, and spending time with her husband, Patrick, and her dog, Pippin.
-                    </h4>
-                </div>
             </div>
-            <div className="col-12 mr-auto ml-auto text-center mt-3 row">        
+            <div className="col-12" style={{backgroundColor:'#f3efe0',paddingBottom: 50}}>
                 <ContactForm/>
             </div>
-            <div className="col-12 mr-auto ml-auto mt-5 row mb-4">
+            <div className="col-12" style={{paddingBottom: 50, paddingTop: 50}}>
                 <Locations/>
-            </div>    
-            
-          </div>
+            </div>
+        </div>
+
+
+
+        //   <React.Fragment>
+        //     <div className="col-10 mr-auto ml-auto mt-4">
+        //         <div className="col-12 row" style={{paddingTop:80}}>
+        //             <div className="col-3">
+        //                 <img style={{maxWidth:'100%',maxHeight:600}} src={headshot}></img>
+        //             </div>
+        //             <div className="col-9">
+        //                 <h3 className="text-center"><u><b>About Duhe Willetts Law PLLC...</b></u></h3>
+        //                 <h4>is the product of Jordan Duhe Willetts desire to build a law firm focused on prvoding clients the highest quality legal services focused on each client's individual needs.  As one of only nine Criminal Law Specialist's in Southeastern North Carolina, Duhe Willetts Law has the experience and legal expertise to guide you through and out of your legal circumstance.</h4>
+        //                 <h3 className="mt-4 text-center"><u><b>Meet Jordan Duhe Willetts</b></u></h3>
+        //                 <h4>
+        //                     Originally from Maryland, Jordan fell in love with North Carolina while obtaining her undergraduate degree at Guilford College, in Greensboro, North Carolina.  She is a graduate of Washington and Lee University School of Law.  When not at the office, Jordan likes to enjoy Southeastern North Carolina's beautiful beaches, and spending time with her husband, Patrick, and her dog, Pippin.
+        //                 </h4>
+        //             </div>
+        //         </div>    
+        //     </div>
+        //     <div className="col-12" style={{backgroundColor:'#f3efe0',margin:"50px auto"}}>      
+        //         <ContactForm/>
+        //     </div>
+        //     <section className="col-12" style={{padding: '60px 0'}}>
+        //         <Locations/>
+        //     </section>
+        // </React.Fragment>
         // <div style={{width:"100%",height:"100%"}}>
         //     <div style={{width:"70%",margin:'auto',backgroundColor:"#D3D3D3"}}>
         //         <div style={{width:'30%',color:"white",float:'left'}}>

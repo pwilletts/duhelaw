@@ -5,7 +5,7 @@ import FooterBar from './components/FooterBar'
 import Home from './pages/Home'
 import About from './pages/About'
 import Contact from './pages/Contact'
-import CurrentClient from './pages/CurrentClient'
+import CurrentClients from './pages/CurrentClients'
 import PracticeAreas from './pages/Practice-Areas';
 import Reviews from './pages/Reviews'
 
@@ -33,7 +33,7 @@ class App extends Component {
                 }>
                 </Route>
                 <Route path="/current-clients" render={(props) => 
-                  <CurrentClient/>
+                  <CurrentClients/>
                 }>
                 </Route>
                 <Route exact path="/practice-areas/:area?/:crime?" render={(props) => 

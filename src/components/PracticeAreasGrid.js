@@ -5,7 +5,7 @@ class Home extends React.Component {
     render() {
       return (
           <React.Fragment>
-              <div className="col-xl-10 mr-auto ml-auto text-center" style={{color:"white"}}>
+                <div className="col-xl-10 mr-auto ml-auto text-center" style={{color:"white"}}>
                     <h2>We provide representation in the following criminal law areas:</h2>
                 </div>                   
                 <section class="card-body col-xl-8 col-lg-8 col-md-10 col-sm-12 col-12 mr-auto ml-auto">

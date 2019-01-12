@@ -11,7 +11,7 @@ class Home extends React.Component {
     render() {
       return (
             <div className="col-12 row nopadding">
-                <div className="col-12 header-img nopadding mb-4">
+                <div className="col-12 header-img nopadding">
                     <Header/>
                 </div>         
                 <section class="col-12" style={{backgroundColor:'#f3efe0'}}>
@@ -23,10 +23,10 @@ class Home extends React.Component {
                 <section className="col-12 mr-auto ml-auto mt-4" style={{backgroundColor:'#f3efe0'}}>
                     <ReviewsWidget/>
                 </section>
-                <section className="col-lg-8 col-md-10 col-12 mr-auto ml-auto">
+                <section className="col-lg-12 mr-auto ml-auto">
                     <ContactForm/>
                 </section>
-                <section className="col-12 col-md-12 col-lg-10 col-xl-10 mr-auto ml-auto row mb-4">
+                <section className="col-12 mb-4" style={{backgroundColor:'#f3efe0'}}>
                     <Locations/>
                 </section>
             </div>

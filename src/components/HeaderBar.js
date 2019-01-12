@@ -51,7 +51,7 @@ class HeaderBar extends React.Component {
 
     render() {
       return (
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark navbar-fixed-bottom">
+        <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
             <div>
                 <a className="navbar-brand" href="/">Duhe Willetts Law PLLC</a>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -99,8 +99,14 @@ class HeaderBar extends React.Component {
                     </li>
                 </Link>
 
-                <div className="ml-auto">   
-                    <form class="dropdown form-inline my-2 my-lg-0">
+                <div className="ml-auto navbar-nav">   
+                    <li class="nav-item">
+                        <a className="nav-link" href="+910-617-5542" sytle={{fontSize:24}}>910-617-5542</a>
+                    </li>
+                    <li class="nav-item">
+                        <a className="nav-link" href="+910-617-5542">duhelaw@gmail.com</a>
+                    </li>
+                    {/* <form class="dropdown form-inline my-2 my-lg-0">
                         <input class="form-control mr-sm-2" type="search" id='searchTerm' onChange={(e) => this.updateState('searchTerm', e.target.value)} placeholder="Search" aria-label="Search"></input>
                         <button id="dLabel" className="btn btn-outline-success" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Search
@@ -121,8 +127,8 @@ class HeaderBar extends React.Component {
                                 }
                             ): ""}
                         </div>
-                    </form>                                     
-                </div>
+                    </form>   */}                                  
+                </div> 
             </div>
         </nav>
       );
