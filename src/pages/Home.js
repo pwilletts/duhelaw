@@ -14,16 +14,16 @@ class Home extends React.Component {
                 <div className="col-12 header-img nopadding">
                     <Header/>
                 </div>         
-                <section class="col-12" style={{backgroundColor:'#f3efe0'}}>
+                <section class="col-12 bg-color">
                     <PracticeAreasGrid/>
                 </section>
                 <section className="col-12">
                     <ShortAbout/>
                 </section>
-                <section className="col-12 mr-auto ml-auto mt-4" style={{backgroundColor:'#f3efe0'}}>
+                <section className="col-12 mr-auto ml-auto bg-color">
                     <ReviewsWidget/>
                 </section>
-                <section className="col-lg-12 mr-auto ml-auto">
+                <section className="col-12 mr-auto ml-auto">
                     <ContactForm/>
                 </section>
                 <section className="col-12 mb-4" style={{backgroundColor:'#f3efe0'}}>

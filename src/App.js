@@ -18,7 +18,7 @@ library.add(faStar)
 class App extends Component {
   render() {
     return (
-      <div style={{width:"100%",maxHeight:"100%",position:'realtive'}}>
+      <div style={{width:"100%",maxHeight:"100%",position:'relative'}}>
         <div style={{paddingBottom:50,minHeight:'100%'}}>
           <BrowserRouter>
             <React.Fragment>

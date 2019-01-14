@@ -15,13 +15,159 @@ h1, h2, h3, h4, h5, h6 {
 h1, h2 {
   text-transform: uppercase;
   letter-spacing: 2px;
-  margin-bottom: 30px;
   color: #2a445b;
 }
 
 section {
   padding: 60px 0;
 }
+
+.margin-section{
+  padding-top:4.0rem !important;
+  padding-bottom:4.0rem !important;
+}
+
+.margin-section-extra{
+  padding-top:5rem !important;
+  padding-bottom:2.5rem !important;
+}
+
+.home-header-div{
+  max-height:500px !important;
+  padding: 50px 0 !important;
+}
+
+.header-mobile-button{
+  display:none;
+}
+
+.show{
+  display:inline-block;
+}
+
+.margin-10{
+  margin: 2rem 0px;
+}
+
+.bg-color{
+  background-color: #f3efe0;
+}
+
+.practice-area-head{
+  color:white;
+}
+
+@media(max-width:500px){
+  .map{
+    display:none;
+  }
+
+  .margin-section{
+    padding-top:2.0rem !important;
+    padding-bottom:2.0rem !important;
+  }
+
+  .margin-section-extra{
+    text-align: center;
+  }
+
+  h2{
+    padding-bottom: 0px !important;
+  }
+
+  .flt-btn{
+    width:80%;
+    position:fixed !important;
+    bottom:70px !important;
+    left:10% !important;
+    right:10% !important;
+  }
+
+  .headshot{
+    max-height:200px;
+    padding-bottom:2rem;
+    padding-top:2rem;
+  }
+}
+
+.collapse{
+  text-align: center
+}
+
+.about-h2{
+  padding-bottom:10px !important;
+}
+
+.about-h4{
+  padding-bottom:25px;
+}
+
+@media(min-width:501px){
+  .flt-btn{
+    position: fixed;
+    top:50px;
+    right:20px;
+  }
+}
+
+@media(max-width:768px){
+  .header-title{
+    font-size: 16px;
+  }
+
+  .header-contact{
+    display:none;
+  }
+
+  .home-header{
+    font-size:1.75rem;
+    line-height:2.5rem;
+  }
+
+  .home-header-lead{
+    display:none;
+  }
+
+  .home-header-div{
+    height:375px;
+  }
+
+  .header-mobile-button{
+    display:inline-block;
+    margin:0px 10px;
+    width: 43%;
+  }
+
+  h2{
+    font-size:1.7rem;
+    /* margin-bottom: 40px; */
+  }
+}
+
+h2{
+  padding-bottom:30px;
+}
+
+.home-header{
+  font-weight: bold;
+}
+
+.m-2-0{
+  margin:2rem 0;
+}
+
+.mt-20{
+  margin-top:2rem;
+}
+
+.m-35{
+  margin:3.5rem;
+}
+
+.mb-35{
+  margin-bottom: 3.5rem;
+}
+
 
 .star{
   color: #f7b845;
@@ -31,8 +177,17 @@ nav {
   border-bottom: #f7b845 5px solid;
 }
 
+.contact-btn{
+  margin-top: 0px !important;
+}
+
+.location-btn{
+  margin-top: 1.0rem !important;
+}
+
 .btn-primary {
   font-size: 1rem;
+  margin-top: 1.5rem;
   /* font-weight: bold; */
   padding: 10px 25px;
   border: none;
@@ -78,7 +233,6 @@ nav {
 .about{}
 
 .jumbotron h1 {
-  font-size: 2.5rem;
   letter-spacing: 11px;
   padding: 40px 0;
   margin-bottom: 0;
@@ -101,6 +255,14 @@ nav {
   display: flex;
   background-image: url('./pictures/background.jpg');
   background-size: cover;
+}
+
+.review-div{
+  min-height:200px;
+}
+
+.review-text{
+  font-size:1.1rem;
 }
 
 .carousel-control-next-icon{
@@ -146,32 +308,6 @@ li.dropdown:hover .dropdown-menu{
 
 .form-control{
   border-radius: 0;
-}
-
-.results {
-  display:'none';
-  background-color: 'yellow'
-}
-
-.dropdown-menu2 {
-  position: fixed;
-  top: 100%;
-  left: 0;
-  z-index: 1000;
-  display: none;
-  float: left;
-  min-width: 10rem;
-  width:500px;
-  padding: 0.5rem 0;
-  margin: 0.125rem 0 0;
-  font-size: 1rem;
-  color: #212529;
-  text-align: left;
-  list-style: none;
-  background-color: #fff;
-  background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  border-radius: 0.25rem;
 }
 
 .navbar-nav .dropdown-menu2 {

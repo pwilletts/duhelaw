@@ -53,13 +53,13 @@ class HeaderBar extends React.Component {
       return (
         <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
             <div>
-                <a className="navbar-brand" href="/">Duhe Willetts Law PLLC</a>
+                <a className="navbar-brand header-title" href="/">Duhe Willetts Law PLLC</a>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
             </div>
 
-            <div className="navbar-nav ml-8 collapse navbar-collapse" id="navbarSupportedContent">
+            <div className="navbar-nav collapse navbar-collapse" id="navbarSupportedContent">
                 <Link to="/">
                     <li class="nav-item">
                         <a class="nav-link" href="#">Home</a>
@@ -72,7 +72,7 @@ class HeaderBar extends React.Component {
                             Practice Areas
                         </a>
                     </Link>                  
-                    <PracticeAreasDropdown/>
+                    {/* <PracticeAreasDropdown/> */}
                 </li>
 
                 <Link to="/current-clients">
@@ -99,7 +99,7 @@ class HeaderBar extends React.Component {
                     </li>
                 </Link>
 
-                <div className="ml-auto navbar-nav">   
+                <div className="ml-auto navbar-nav header-contact">   
                     <li class="nav-item">
                         <a className="nav-link" href="+910-617-5542" sytle={{fontSize:24}}>910-617-5542</a>
                     </li>

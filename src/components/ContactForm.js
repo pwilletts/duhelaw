@@ -4,8 +4,9 @@ import {Link} from 'react-router-dom'
 class ContactForm extends React.Component {
     render() {
       return (
-            <div className="col-8 mr-auto ml-auto">
-                <div className="text-center" style={{paddingTop:40}}>
+          <div className="col-12 margin-section">
+            <div className="col-11 col-xl-8 col-lg-8 col-md-10 mr-auto ml-auto">
+                <div className="text-center">
                     <h2>Contact Now! Free Consultations!</h2>
                 </div>
                 <form>
@@ -29,9 +30,10 @@ class ContactForm extends React.Component {
                         <textarea className="form-control" id="textarea" rows='6'></textarea>
                     </div>
                     </div>
-                    <button type="submit" class="btn btn-primary">Send</button>
+                    <button type="submit" class="btn btn-primary contact-btn">Send</button>
                 </form>
             </div>
+          </div>    
       );
     }
   }
