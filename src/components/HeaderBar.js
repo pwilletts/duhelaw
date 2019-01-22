@@ -1,17 +1,18 @@
 import React from 'react'
 import $ from 'jquery'
 import {Link} from 'react-router-dom'
+import Responsive from 'react-responsive'
 import PracticeAreasDropdown from '../components/PracticeAreasDropdown'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 const crimeData = require('../data/config.json')
+
+const NoEmail = props => <Responsive {...props} minWidth={1169}/>
+const CollapsedPhone = props => <Responsive {...props} maxWidth={990} minWidth={600}/>
 
 class HeaderBar extends React.Component {
     state = {
         searchTerm: null,
         searchResults: null
-    }
-
-    componentDidMount(){
-
     }
 
     handleSearch(){
@@ -101,35 +102,26 @@ class HeaderBar extends React.Component {
 
                 <div className="ml-auto navbar-nav header-contact">   
                     <li class="nav-item">
-                        <a className="nav-link" href="+910-617-5542" sytle={{fontSize:24}}>910-617-5542</a>
+
+                        <a className="nav-link" href="+910-617-5542" sytle={{fontSize:24}}><FontAwesomeIcon className="mr-2" icon="phone"></FontAwesomeIcon>910-617-5542</a>
                     </li>
-                    <li class="nav-item">
-                        <a className="nav-link" href="+910-617-5542">duhelaw@gmail.com</a>
-                    </li>
-                    {/* <form class="dropdown form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2" type="search" id='searchTerm' onChange={(e) => this.updateState('searchTerm', e.target.value)} placeholder="Search" aria-label="Search"></input>
-                        <button id="dLabel" className="btn btn-outline-success" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Search
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="dLabel">
-                            {this.state.searchResults ? this.state.searchResults.map(
-                                result => {
-                                    // result.crimes.map(
-                                    //     crime => {
-                                    //         return (
-                                    //             <li>{crime}</li>
-                                    //         )
-                                    //     }
-                                    // )
-                                    return(
-                                        <li>{result.type}</li>
-                                    )
-                                }
-                            ): ""}
-                        </div>
-                    </form>   */}                                  
+                    <NoEmail>
+                        <li class="nav-item">
+                            <a className="nav-link" href="+910-617-5542"><FontAwesomeIcon className="mr-2" icon="envelope"></FontAwesomeIcon>duhelaw@gmail.com</a>
+                        </li> 
+                    </NoEmail>                                  
                 </div> 
             </div>
+            <CollapsedPhone>
+                <div className="navbar-nav" style={{whiteSpace:"nowrap"}}>
+                    <li class="nav-item">          
+                        <a className="nav-link" href="+910-617-5542"><FontAwesomeIcon className="mr-2" icon="phone"></FontAwesomeIcon>910-617-5542</a>
+                    </li>
+                    <li class="nav-item" style={{display:"inline-block"}}>
+                        <a className="nav-link" href="+910-617-5542">duhelaw@gmail.com</a>
+                    </li>
+                </div>
+            </CollapsedPhone>       
         </nav>
       );
     }

@@ -1,5 +1,6 @@
 {
   "projects": {
-    "duhelaw": "duhelaw-ff323"
+    "duhelaw": "duhelaw-ff323",
+    "default": "duhelaw-ff323"
   }
 }

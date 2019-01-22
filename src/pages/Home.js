@@ -6,8 +6,14 @@ import ShortAbout from '../components/ShortAbout'
 import ReviewsWidget from '../components/ReviewsWidget'
 import ContactForm from '../components/ContactForm'
 import Locations from '../components/Locations'
+import ReactGA from 'react-ga'
 
 class Home extends React.Component {
+    componentDidMount(){
+        ReactGA.initialize('UA-132864646-1');
+        ReactGA.pageview('/');
+    }
+  
     render() {
       return (
             <div className="col-12 row nopadding">

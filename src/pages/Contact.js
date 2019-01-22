@@ -3,8 +3,14 @@ import {Link} from 'react-router-dom'
 import ContactForm from '../components/ContactForm'
 import Locations from '../components/Locations'
 import ReviewsWidget from '../components/ReviewsWidget'
+import ReactGA from 'react-ga'
 
 class Contact extends React.Component {
+    componentDidMount(){
+        ReactGA.initialize('UA-132864646-1');
+        ReactGA.pageview('/contact');
+    }
+
     render() {
       return (
         <React.Fragment>

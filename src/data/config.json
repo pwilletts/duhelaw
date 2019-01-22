@@ -35,5 +35,65 @@
                 "description": ["robbery", "with", "a", "dangerous", "weapon"]
             }
         ]
+    }, {
+        "type": "drug possession",
+        "crimes": [
+            {
+                "type": "assault",
+                "description": ["assualt", "inflicting", "serious", "injury"]
+            },
+            {
+                "type": "robbery",
+                "description": ["robbery", "with", "a", "dangerous", "weapon"]
+            }
+        ]
+    }, {
+        "type": "drug possession",
+        "crimes": [
+            {
+                "type": "assault",
+                "description": ["assualt", "inflicting", "serious", "injury"]
+            },
+            {
+                "type": "robbery",
+                "description": ["robbery", "with", "a", "dangerous", "weapon"]
+            }
+        ]
+    }, {
+        "type": "drug possession",
+        "crimes": [
+            {
+                "type": "assault",
+                "description": ["assualt", "inflicting", "serious", "injury"]
+            },
+            {
+                "type": "robbery",
+                "description": ["robbery", "with", "a", "dangerous", "weapon"]
+            }
+        ]
+    }, {
+        "type": "drug possession",
+        "crimes": [
+            {
+                "type": "assault",
+                "description": ["assualt", "inflicting", "serious", "injury"]
+            },
+            {
+                "type": "robbery",
+                "description": ["robbery", "with", "a", "dangerous", "weapon"]
+            }
+        ]
+    }, {
+        "type": "drug possession",
+        "crimes": [
+            {
+                "type": "assault",
+                "description": ["assualt", "inflicting", "serious", "injury"]
+            },
+            {
+                "type": "robbery",
+                "description": ["robbery", "with", "a", "dangerous", "weapon"]
+            }
+        ]
     }
 ]

@@ -4,14 +4,19 @@ import headshot from '../pictures/headshot.jpg'
 import ContactForm from '../components/ContactForm'
 import Locations from '../components/Locations'
 import Contact from './Contact';
+import ReactGA from 'react-ga'
 
 var Mobile = props => <Responsive {...props} maxWidth={568}/>
 var Desktop = props => <Responsive {...props} minWidth={569}/>
 
 class About extends React.Component {
+    componentDidMount(){
+        ReactGA.initialize('UA-132864646-1');
+        ReactGA.pageview('/about');
+    }
+
     render() {
       return (
-          
         <div className="col-12 row nopadding">
             <Mobile>
                 <div className="col-11 col-xl-10 col-lg-10 col-md-10 mr-auto ml-auto margin-section-extra">

@@ -8,12 +8,11 @@ import Contact from './pages/Contact'
 import CurrentClients from './pages/CurrentClients'
 import PracticeAreas from './pages/Practice-Areas';
 import Reviews from './pages/Reviews'
-
+import ReactGA from 'react-ga'
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faStar } from '@fortawesome/free-solid-svg-icons'
-library.add(faStar)
+import { faStar, faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
-
+library.add(faStar,faPhone,faEnvelope)
 
 class App extends Component {
   render() {

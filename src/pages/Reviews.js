@@ -1,8 +1,14 @@
 import React from 'react'
 import ReviewCard from '../components/ReviewCard'
+import ReactGA from 'react-ga'
 const reviews = require('../data/reviews.json')
 
 class About extends React.Component {
+    componentDidMount(){
+        ReactGA.initialize('UA-132864646-1');
+        ReactGA.pageview('/reviews');
+    }
+  
     render() {
       return (
           <div className="col-11 col-xl-9 col-lg-10 col-md-10 mr-auto ml-auto margin-section-extra">

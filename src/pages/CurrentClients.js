@@ -1,7 +1,13 @@
 import React from 'react'
 import ContactForm from '../components/ContactForm'
+import ReactGA from 'react-ga'
 
 class CurrentClients extends React.Component{
+    componentDidMount(){
+        ReactGA.initialize('UA-132864646-1');
+        ReactGA.pageview('/current-clients');
+    }
+  
     render(){
         return(
             <div className="col-12 mr-auto ml-auto text-center">
